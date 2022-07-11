@@ -15,7 +15,6 @@ int main()
                 }
                 scanf("%c",&dot);
         }
-
         for(i=0;i<4;i++)
         {
                 if(a[i] < 0 || a[i] > 255)
