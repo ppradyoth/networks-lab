@@ -1,6 +1,7 @@
 import socket
 host = socket.gethostname()
 port = 5100
+
 client_socket = socket.socket()
 client_socket.connect((host, port))
 message = input("Enter the string: ")
