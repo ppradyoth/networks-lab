@@ -26,8 +26,6 @@ int main()
              }
          else
              {   printf("Frame %d Not Received\n",j);
-                 //nt=j%N;
-                 //wf=j-nt;
                  printf("Retransmitting Window");
                  break;
              }
