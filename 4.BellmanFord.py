@@ -30,17 +30,17 @@ class Graph:
         self.print_solution(dist)
 
 
-g = Graph(7)
+v=int(input("Please enter the number of vertices:\n"))
+g = Graph(v)
+e=int(input("Please enter the number of edges:\n"))
+src=int(input("Please enter the source vertex number (0-v):\n"))
+for i in range(e):
+    s,d,w=input("Please enter edge number (src , des , weight) "+str(i+1)+" : ").split()
+    s=int(s)
+    d=int(d)
+    w=int(w)
+    g.addEdge(s,d,w)
 
-g.addEdge(0, 1, 6)
-g.addEdge(0, 2, 5)
-g.addEdge(0, 3, 5)
-g.addEdge(1,4,-1)
-g.addEdge(3,5,-1)
-g.addEdge(5,6,3)
-g.addEdge(4,6,3)
-g.addEdge(2, 1, -2)
-g.addEdge(2, 4, 1)
-g.addEdge(3, 2, -2)
 
-g.bellman_ford(0)
+
+g.bellman_ford(src)

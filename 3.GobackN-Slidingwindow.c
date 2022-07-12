@@ -1,10 +1,9 @@
 #include<stdio.h>
-#include<time.h>
 #include<stdlib.h>
 int main()
 {
  int nf,N,i=1,j=0;
- int no_tr=0,nt,wf;
+ int no_tr=0;
  printf("Enter the number of frames : \n");
  scanf("%d",&nf);
  printf("Enter the Window Size : \n");
