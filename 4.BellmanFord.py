@@ -40,7 +40,27 @@ for i in range(e):
     d=int(d)
     w=int(w)
     g.addEdge(s,d,w)
-
-
-
 g.bellman_ford(src)
+
+# Please enter the number of vertices:
+# 6
+# Please enter the number of edges:
+# 9
+# Please enter the source vertex number (0-v):
+# 0
+# Please enter edge number (src , des , weight) 1 : 0 1 2
+# Please enter edge number (src , des , weight) 2 : 0 2 4
+# Please enter edge number (src , des , weight) 3 : 1 2 1
+# Please enter edge number (src , des , weight) 4 : 1 4 2
+# Please enter edge number (src , des , weight) 5 : 1 3 -4
+# Please enter edge number (src , des , weight) 6 : 2 4 3
+# Please enter edge number (src , des , weight) 7 : 4 3 3
+# Please enter edge number (src , des , weight) 8 : 4 5 2
+# Please enter edge number (src , des , weight) 9 : 3 5 2
+# Vertex Distance from Source
+# 0                                0
+# 1                                2
+# 2                                3
+# 3                                -2
+# 4                                4
+# 5                                0
